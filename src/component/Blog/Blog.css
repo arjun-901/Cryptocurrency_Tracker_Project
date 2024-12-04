@@ -1,0 +1,233 @@
+.crypto-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  border-right: 2px solid black;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.content p {
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  color: #007bff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar li:hover {
+  background-color: #75094c;
+  color: white;
+}
+
+.content {
+  width: 75%;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+  word-wrap: break-word;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.print-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.print-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 30%;
+  }
+  
+  .content {
+    width: 70%;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.4rem;
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .crypto-page {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid black;
+    position: relative;
+  }
+  
+  .content {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.3rem;
+  }
+  
+  .content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .crypto-page {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 2px solid black;
+    position: relative;
+  }
+  
+  .content {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar li {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  button.print-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Extra small devices (small phones, less than 360px) */
+@media (max-width: 359px) {
+  .sidebar {
+    padding: 12px;
+  }
+  
+  .content {
+    padding: 12px;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.1rem;
+  }
+  
+  .content h2 {
+    font-size: 1.3rem;
+  }
+  
+  .sidebar li {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .content p {
+    font-size: 0.85rem;
+  }
+  
+  button.print-button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}

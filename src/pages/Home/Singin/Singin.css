@@ -1,0 +1,175 @@
+/* Signin.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+.signin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #080710;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px;
+}
+
+.signin-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 50px 35px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+
+.signin-form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.signin-form label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.signin-form input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.signin-form input::placeholder {
+  color: #e5e5e5;
+}
+
+.signin-form button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.signin-form button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .signin-container {
+    max-width: 450px;
+    padding: 60px 45px;
+  }
+
+  .signin-form h3 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .signin-container {
+    max-width: 400px;
+    padding: 50px 35px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .signin-container {
+    max-width: 380px;
+    padding: 40px 30px;
+  }
+
+  .signin-form h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .signin-form input {
+    height: 48px;
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .signin-page {
+    padding: 10px;
+  }
+
+  .signin-container {
+    padding: 30px 20px;
+  }
+
+  .signin-form h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .signin-form label {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .signin-form input {
+    height: 45px;
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .signin-form button {
+    margin-top: 35px;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices (small phones, less than 360px) */
+@media (max-width: 359px) {
+  .signin-container {
+    padding: 25px 15px;
+  }
+
+  .signin-form h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .signin-form label {
+    font-size: 13px;
+  }
+
+  .signin-form input {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .signin-form button {
+    margin-top: 30px;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+}
